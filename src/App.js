@@ -24,7 +24,8 @@ class App extends Component {
 
   focusStyle(){
     return {
-      height: '100%'
+      outline: 1,
+      width: '100%'
     }
   }
 

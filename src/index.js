@@ -6,10 +6,10 @@ import registerServiceWorker from './registerServiceWorker';
 
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import reducer from './reducers'
+import reducer, { initialState } from './reducers'
 
 
-const store = createStore(reducer)
+const store = createStore(reducer, initialState)
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import '../App.css';
 
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as Actions from '../actions'
 
+import Countdown from 'react-countdown-now'
+
+import Mondai from '../components/Mondai'
 
 
 class game extends Component {
@@ -16,32 +18,34 @@ class game extends Component {
     actions.addCount(1)
   }
 
-  handleKeyPress(e){
+  handleKeyPress(e) {
     console.log('call handle key press')
     const { actions } = this.props
     actions.keyPress(e.charCode)
   }
 
-  focusStyle(){
-    return {
-      outline: 1,
-      width: '100%'
+  renderer({ hours, minutes, seconds, completed }) {
+    const { count, code } = this.props
+    if (completed || count > 0) {
+      return (<Mondai
+        count={count}
+        code={code}
+        onClick={this.handleAddButton.bind(this)}
+        onKeyPress={this.handleKeyPress.bind(this)}
+        />
+      )
+    } else {
+      return <p>{seconds}</p>
     }
   }
 
   render() {
-    const { count, code } = this.props
     return (
-      <div className="App" onKeyPress={this.handleKeyPress.bind(this)} tabIndex="0" style={this.focusStyle()} >
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button onClick={this.handleAddButton.bind(this)} >{count}</button>
-      </div>
+      <Countdown
+        date={Date.now() + 3000}
+        renderer={this.renderer.bind(this)}
+        controled={true}
+      />
     );
   }
 }

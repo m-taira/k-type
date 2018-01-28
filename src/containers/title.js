@@ -6,6 +6,8 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as Actions from '../actions'
 
+import { Link } from 'react-router-dom'
+
 
 
 class title extends Component {
@@ -30,7 +32,7 @@ class title extends Component {
   }
 
   render() {
-    const { count, code } = this.props
+    const { code } = this.props
     return (
       <div className="App" onKeyPress={this.handleKeyPress.bind(this)} tabIndex="0" style={this.focusStyle()} >
         <header className="App-header">
@@ -40,7 +42,7 @@ class title extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>{code}</p>
+        <Link to='/game'>開始</Link>
       </div>
     );
   }

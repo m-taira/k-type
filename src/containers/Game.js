@@ -9,8 +9,15 @@ import Countdown from 'react-countdown-now'
 
 import Mondai from '../components/Mondai'
 
+import { SCENE } from '../constants'
+
 
 class game extends Component {
+
+  componentWillMount() {
+    const { actions } = this.props
+    actions.startCountdown()
+  }
 
   handleAddButton() {
     console.log('handle add button')
@@ -20,13 +27,23 @@ class game extends Component {
 
   handleKeyPress(e) {
     console.log('call handle key press')
+    const { actions, history } = this.props
+    if(e.charCode === 101) {
+      history.push('/result')
+    } else {
+      actions.keyPress(e.charCode)
+    }
+  }
+
+  handleTimeComplete() {
+    console.log('complete timer')
     const { actions } = this.props
-    actions.keyPress(e.charCode)
+    actions.timeComplete()
   }
 
   renderer({ hours, minutes, seconds, completed }) {
-    const { count, code } = this.props
-    if (completed || count > 0) {
+    const { count, code, scene } = this.props
+    if (completed || scene === SCENE.playing) {
       return (<Mondai
         count={count}
         code={code}
@@ -44,7 +61,7 @@ class game extends Component {
       <Countdown
         date={Date.now() + 3000}
         renderer={this.renderer.bind(this)}
-        controled={true}
+        onComplete={this.handleTimeComplete.bind(this)}
       />
     );
   }

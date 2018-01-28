@@ -8,33 +8,24 @@ import * as Actions from '../actions'
 
 import { Link } from 'react-router-dom'
 
+import Keysensor from '../components/Keysensor'
+
 
 
 class Title extends Component {
 
-  handleAddButton() {
-    console.log('handle add button')
-    const { actions } = this.props
-    actions.addCount(1)
-  }
-
-  handleKeyPress(e){
-    console.log('call handle key press')
-    const { actions } = this.props
-    actions.keyPress(e.charCode)
-  }
-
-  focusStyle(){
-    return {
-      outline: 1,
-      width: '100%'
+  handleKeydown(e){
+    console.log('call handle key down')
+    const { history } = this.props
+    if(e.keyCode === 32) {
+      history.push('/game')
     }
   }
 
   render() {
     const { code } = this.props
     return (
-      <div className="App" onKeyPress={this.handleKeyPress.bind(this)} tabIndex="0" style={this.focusStyle()} >
+      <Keysensor onKeyDown={this.handleKeydown.bind(this)}>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
@@ -43,7 +34,7 @@ class Title extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Link to='/game'>開始</Link>
-      </div>
+      </Keysensor>
     );
   }
 }

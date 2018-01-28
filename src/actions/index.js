@@ -19,8 +19,15 @@ export const startCountdown = () => {
   }
 }
 
-export const timeComplete = () => {
+export const timerComplete = () => {
   return {
     type: 'START_GAME'
+  }
+}
+
+export const correctType = (char) => {
+  return {
+    type: 'CORRECT',
+    char
   }
 }

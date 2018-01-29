@@ -9,7 +9,7 @@ import Result from './containers/Result'
 const App = ({ store }) => (
   <Provider store={ store }>
     <Router>
-      <div class="container">
+      <div className="container">
         <Route exact path="/game" component={ Game }/>
         <Route exact path="/title" component={ Title }/>
         <Route exact path="/result" component={ Result }/>

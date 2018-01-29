@@ -23,19 +23,22 @@ class Result extends Component {
     }
   }
 
+  missStyle() {
+    return {
+      fontSize: '3.5rem'
+    }
+  }
+
   render() {
-    const { code } = this.props
+    const { miss } = this.props
     return (
       <Keysensor onKeyDown={this.handleKeydown.bind(this)}>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>{code}</p>
-        <Link to='/title'>戻る</Link>
+        <p style={this.missStyle()}>{miss}回ミスしたよ</p>
+        <p>スペースでタイトルに戻る</p>
       </Keysensor>
     );
   }

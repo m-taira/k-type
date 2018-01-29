@@ -13,7 +13,6 @@ import Keysensor from '../components/Keysensor'
 
 
 class Title extends Component {
-
   handleKeydown(e){
     console.log('call handle key down')
     const { history } = this.props
@@ -31,9 +30,9 @@ class Title extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          タイピングタイトル
         </p>
-        <Link to='/game'>開始</Link>
+        <p>スペースで開始</p>
       </Keysensor>
     );
   }

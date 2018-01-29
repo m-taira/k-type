@@ -32,7 +32,7 @@ class Mondai extends Component {
   }
 
   render() {
-    const { count, code, onKeyPress, onClick, entered, unentered, kanji } = this.props
+    const { onKeyPress, entered, unentered, kanji } = this.props
     return (
       <Keysensor onKeyPress={onKeyPress}>
         <header className="App-header">

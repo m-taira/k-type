@@ -1,6 +1,7 @@
 import count from './count'
 import code from './code'
-import scene from './scene'/*
+import scene from './scene'
+/*
 import entered from './entered'
 import unentered from './unentered'
 import sentences from './sentences'

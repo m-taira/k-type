@@ -14,7 +14,6 @@ import Keysensor from '../components/Keysensor'
 
 class Title extends Component {
   handleKeydown(e){
-    console.log('call handle key down')
     const { history } = this.props
     if(e.keyCode === 32) {
       history.push('/game')
@@ -22,7 +21,6 @@ class Title extends Component {
   }
 
   render() {
-    const { code } = this.props
     return (
       <Keysensor onKeyDown={this.handleKeydown.bind(this)}>
         <header className="App-header">

@@ -16,7 +16,6 @@ class Result extends Component {
 
 
   handleKeydown(e){
-    console.log('call handle key down')
     const { history } = this.props
     if(e.keyCode === 32) {
       history.push('/title')

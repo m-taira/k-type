@@ -13,24 +13,19 @@ import sentence from '../sentence.json'
 class game extends Component {
 
   componentWillMount() {
-    const { actions } = this.props
     this.loadSentences()
-    actions.startCountdown()
   }
 
   loadSentences(){
-    const { actions } = this.props
-    actions.loadSentences(sentence)
+    const { actions, game } = this.props
+    actions.loadSentences(sentence[game.course].sentences)
   }
 
   componentWillReceiveProps(nextProps) {
-    const { game, history, scene, actions, sentences, curent_sentence } = nextProps
-    if(game.unentered === '' && scene === SCENE.playing) {
-      if(game.current_sentence === game.sentences.length - 1) {
-        history.push('/result')
-      } else {
-        actions.nextSentence()
-      }
+    const { history, scene } = nextProps
+
+    if(scene === SCENE.result) {
+      history.push('/result')
     }
   }
 
@@ -40,6 +35,9 @@ class game extends Component {
   }
 
   handleKeyPress(e) {
+    if(e.charCode === 32) {
+      return
+    }
     const { actions, game } = this.props
     const currentChar = game.unentered.charAt(0)
     const currentCode = currentChar.toLowerCase().charCodeAt(0)
@@ -51,22 +49,30 @@ class game extends Component {
     }
   }
 
+  handlekeyDown(e) {
+    const { actions, game } = this.props
+    if(e.keyCode === 32 && game.unentered === '') {
+      actions.nextSentence()
+    }
+
+    if(e.keyCode === 27) {
+      actions.finish()
+    }
+  }
+
   handleTimeComplete() {
     const { actions } = this.props
     actions.startGame()
   }
 
   renderer({ hours, minutes, seconds, completed }) {
-    const { count, code, scene, game } = this.props
+    const { scene, game } = this.props
     if (completed || scene === SCENE.playing) {
       return (<Mondai
-          entered={game.entered}
-          unentered={game.unentered}
-          kanji={game.sentences[game.current_sentence].kanji}
-          count={count}
-          code={code}
+          game={game}
           onClick={this.handleAddButton.bind(this)}
           onKeyPress={this.handleKeyPress.bind(this)}
+          onKeyDown={this.handlekeyDown.bind(this)}
         />
       )
     } else {

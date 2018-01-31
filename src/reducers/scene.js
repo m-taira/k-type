@@ -5,8 +5,10 @@ const scene = (state = {}, action) => {
       return SCENE.countdown
     case 'START_GAME':
       return SCENE.playing
-    case 'END_GAME':
+    case 'FINISH':
       return SCENE.result
+    case 'RETURN_TITLE':
+      return SCENE.title
     default:
       return state
   }

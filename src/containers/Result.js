@@ -6,19 +6,28 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as Actions from '../actions'
 
-import { Link } from 'react-router-dom'
-
 import Keysensor from '../components/Keysensor'
+
+import { SCENE } from '../constants'
 
 
 
 class Result extends Component {
 
 
-  handleKeydown(e){
+  componentWillReceiveProps(nextProps) {
     const { history } = this.props
-    if(e.keyCode === 32) {
+    const { scene } = nextProps
+
+    if(scene === SCENE.title) {
       history.push('/title')
+    }
+  }
+
+  handleKeydown(e){
+    const { actions } = this.props
+    if(e.keyCode === 32) {
+      actions.returnTitle()
     }
   }
 

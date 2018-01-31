@@ -49,3 +49,34 @@ export const miss = () => {
     type: 'MISS'
   }
 }
+
+export const finish = () => {
+  return {
+    type: 'FINISH'
+  }
+}
+
+export const returnTitle = () => {
+  return {
+    type: 'RETURN_TITLE'
+  }
+}
+
+export const setMenu = (course) => {
+  return {
+    type: 'SET_MENU',
+    course
+  }
+}
+
+export const visibleMenu = () => {
+  return {
+    type: 'VISIBLE_MENU'
+  }
+}
+
+export const hideMenu = () => {
+  return {
+    type: 'HIDE_MENU'
+  }
+}

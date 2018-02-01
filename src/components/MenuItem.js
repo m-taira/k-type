@@ -12,8 +12,16 @@ const MenuItem = (props) => {
     actions.setMenu(course)
   }
 
+  const menuClass = () => {
+    if(selected === true) {
+      return 'menu-item selected'
+    } else {
+      return 'menu-item'
+    }
+  }
+
   return (
-    <li onClick={handleClick} style={itemStyle}>{menu.title}</li>
+    <p className={menuClass()} onClick={handleClick}>{menu.title}</p>
   )
 }
 

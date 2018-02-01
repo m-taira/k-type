@@ -8,8 +8,6 @@ import Countdown from 'react-countdown-now'
 import Mondai from '../components/Mondai'
 import { SCENE } from '../constants'
 import sentence from '../sentence.json'
-
-
 class game extends Component {
 
   componentWillMount() {
@@ -25,7 +23,7 @@ class game extends Component {
     const { history, scene } = nextProps
 
     if(scene === SCENE.result) {
-      history.push('/result')
+      history.push('/title')
     }
   }
 
@@ -35,6 +33,7 @@ class game extends Component {
   }
 
   handleKeyPress(e) {
+    e.preventDefault()
     if(e.charCode === 32) {
       return
     }
@@ -47,6 +46,8 @@ class game extends Component {
     } else {
       actions.miss()
     }
+    const char =  String.fromCharCode(e.charCode).toUpperCase()
+    actions.pressedKey(char)
   }
 
   handlekeyDown(e) {
@@ -76,14 +77,18 @@ class game extends Component {
         />
       )
     } else {
-      return <p>{seconds}</p>
+      return (
+        <p className="countdown">{seconds}</p>
+      )
+
     }
   }
 
   render() {
     return (
       <Countdown
-        date={Date.now() + 1000}
+        zeroPadLength={1}
+        date={Date.now() + 3000}
         renderer={this.renderer.bind(this)}
         onComplete={this.handleTimeComplete.bind(this)}
       />

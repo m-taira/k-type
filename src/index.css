@@ -4,10 +4,232 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
   height: 100%;
 }
 
 #root {
   height: 100%;
+}
+
+p {
+
+}
+
+.content {
+  height: 100%
+}
+
+.title-char {
+  width: 180px;
+  height : 180px;
+  font-size: 6rem;
+  font-weight: bold;
+  border: 20px solid #666666;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  width: 1200px;
+  margin: auto;
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6));
+}
+
+.title-green {
+  color: #0E5800;
+  border-color: #0E5800;
+}
+
+.title-red {
+  color: #FF0000;
+  border-color: #FF0000;
+  transform: rotate(-15deg);
+}
+
+.title-blue {
+  color: #3a943d;
+  border-color: #3a943d;
+}
+
+.title-orange {
+  color: #FF8900;
+  border-color: #FF8900;
+}
+
+.title-pink {
+  color: #ffba3d;
+  border-color: #ffba3d;
+}
+
+.start-caption {
+  color: #666666;
+  font-size: 3rem;
+  border: none;
+  text-align: center;
+  padding: 30px;
+}
+
+.main-area {
+  height: 49%;
+}
+
+.sub-area {
+  background-color: #FF8900;
+  height: 49%;
+  overflow: scroll;
+
+  flex: 1;
+}
+
+.menu-box {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 80%;
+  margin: auto;
+  overflow-x: scroll;
+}
+
+.menu-item {
+  margin: 30px;
+  padding: 25px;
+  text-align: center;
+  width: 40%;
+  height: 100px;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 10px solid #ffffff;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #ffffff;
+
+}
+
+.menu-item.selected {
+  background-color: #0E5800;
+}
+
+.countdown {
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.6));
+  font-size: 20rem;
+  font-weight: bold;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  border: 50px solid #FF8900;
+  line-height: 1.2;
+  text-align: center;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  border-radius: 300px;
+  color: #FF8900;
+}
+
+.kanji {
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.6));
+  font-size: 8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  padding: 30px 0;
+}
+
+.roma {
+  margin-top: 30px;
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 1.1rem
+}
+
+.entered {
+  color: #cccccc;
+}
+
+.unentered {
+  color: #222222;
+}
+
+.panel-area {
+  height: 80%;
+  width: 80%;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+.result-box {
+  display: flex;
+}
+
+.result-title {
+  width: 10%;
+  color: white;
+  font-size: 3rem;
+  margin: 30px;
+}
+
+.result-body {
+  width: 50%;
+  font-size: 3rem;
+  color: white;
+  margin: 30px;
+  border-bottom: 3px solid white;
+  flex: 1;
+}
+
+.result-box2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result-title2 {
+  width: 40%;
+  color: white;
+  font-size: 3rem;
+  margin: 30px;
+}
+
+.result-body2 {
+  width: 40%;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin: 30px;
+}
+
+.rule-box {
+  overflow: hidden;
+  padding: 30px;
+}
+
+.rule-list {
+  padding: 30px;
+  border: 20px solid white;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.rule-item {
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.rule-title {
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
+  padding: 10px;
+  border-left: 20px solid #0E5800;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: white;
 }

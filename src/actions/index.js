@@ -87,3 +87,9 @@ export const pressedKey = (pressed_key) => {
     pressed_key
   }
 }
+
+export const  goal = () => {
+  return {
+    type: 'GOAL'
+  }
+}

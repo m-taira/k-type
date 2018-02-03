@@ -123,7 +123,7 @@ p {
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.6));
   font-size: 20rem;
   font-weight: bold;
-  margin: auto;
+  margin: 50px auto;
   width: 500px;
   height: 500px;
   border: 50px solid #FF8900;
@@ -160,7 +160,6 @@ p {
 }
 
 .panel-area {
-  height: 80%;
   width: 80%;
   margin: 20px auto;
   padding: 30px;
@@ -189,22 +188,42 @@ p {
 .result-box2 {
   display: flex;
   flex-wrap: wrap;
+  margin: 20px;
+  text-align:center;
 }
 
 .result-title2 {
   width: 40%;
   color: white;
   font-size: 3rem;
-  margin: 30px;
+  margin: 10px;
 }
 
 .result-body2 {
-  width: 40%;
+  width: 100%;
   color: white;
   font-size: 3rem;
   text-align: center;
-  margin: 30px;
+  margin: 10px;
+  height: 50px;
 }
+
+
+.result-title3 {
+  width: 100px;
+  color: white;
+  font-size: 1.3rem;
+  margin: 10px ;
+}
+
+.result-body3 {
+  width: 100px;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 10px ;
+}
+
 
 .rule-box {
   overflow: hidden;
@@ -233,3 +252,46 @@ p {
   margin-bottom: 30px;
   color: white;
 }
+
+.goal {
+  font-size: 6rem;
+  color: red;
+  font-weight: bold;
+  width: 400px;
+  margin: 100px auto;
+  border: 20px solid red;
+  text-align: center;
+  padding: 30px 30px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.progress-area {
+  display: flex;
+}
+
+.character-box {
+  height: 100px;
+  flex-grow: 130;
+}
+
+.goal-box {
+  height: 100px;
+  flex-grow: 1;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+}
+
+
+/*
+
+div, p {
+  border: 1px solid black;
+}
+
+
+*/

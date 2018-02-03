@@ -9,6 +9,8 @@ const scene = (state = {}, action) => {
       return SCENE.result
     case 'RETURN_TITLE':
       return SCENE.title
+    case 'GOAL':
+      return SCENE.goal
     default:
       return state
   }

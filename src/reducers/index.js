@@ -26,7 +26,9 @@ export const initialState = {
     current_sentence: undefined,
     miss: 0,
     result: [],
-    pressed_key: ''
+    pressed_key: '',
+    score: 0,
+    character: 0,
   },
   miss: 0
 }

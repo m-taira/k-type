@@ -20,10 +20,14 @@ class game extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const { history, scene } = nextProps
+    const { actions, history, scene, game } = nextProps
 
     if(scene === SCENE.result) {
       history.push('/title')
+    }
+
+    if(game.score >= 100) {
+      actions.goal()
     }
   }
 
@@ -33,11 +37,15 @@ class game extends Component {
   }
 
   handleKeyPress(e) {
+    const { actions, game, scene } = this.props
     e.preventDefault()
+    if(scene === SCENE.goal) {
+      return
+    }
+
     if(e.charCode === 32) {
       return
     }
-    const { actions, game } = this.props
     const currentChar = game.unentered.charAt(0)
     const currentCode = currentChar.toLowerCase().charCodeAt(0)
 
@@ -68,9 +76,10 @@ class game extends Component {
 
   renderer({ hours, minutes, seconds, completed }) {
     const { scene, game } = this.props
-    if (completed || scene === SCENE.playing) {
+    if (completed || scene === SCENE.playing || scene === SCENE.goal) {
       return (<Mondai
           game={game}
+          scene={scene}
           onClick={this.handleAddButton.bind(this)}
           onKeyPress={this.handleKeyPress.bind(this)}
           onKeyDown={this.handlekeyDown.bind(this)}
@@ -88,7 +97,7 @@ class game extends Component {
     return (
       <Countdown
         zeroPadLength={1}
-        date={Date.now() + 3000}
+        date={Date.now() + 1000}
         renderer={this.renderer.bind(this)}
         onComplete={this.handleTimeComplete.bind(this)}
       />

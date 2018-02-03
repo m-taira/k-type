@@ -1,0 +1,76 @@
+{
+  "1": {
+    "title": "あ行",
+    "sentences": [
+      {
+        "kanji": "あいうえお",
+        "kana": "",
+        "roma": "AIUEO"
+      }
+    ]
+  },
+  "2": {
+    "title": "あ行（テスト）",
+    "sentences": [
+      {
+        "kanji": "あい",
+        "roma": "AI"
+      },
+      {
+        "kanji": "あう",
+        "roma": "AU"
+      },
+      {
+        "kanji": "いえ",
+        "roma": "IE"
+      }
+    ]
+  },
+  "3": {
+    "title": "か行",
+    "sentences": [
+      {
+        "kanji": "かきくけこ",
+        "kana": "",
+        "roma": "KAKIKUKEKO"
+      }
+    ]
+  },
+  "4": {
+    "title": "か行（テスト）",
+    "sentences": [
+      {
+        "kanji": "かき",
+        "roma": "KAKI"
+      },
+      {
+        "kanji": "キキ",
+        "roma": "KIKI"
+      },
+      {
+        "kanji": "かこ",
+        "roma": "KAKO"
+      },
+      {
+        "kanji": "きく",
+        "roma": "KIKU"
+      },
+      {
+        "kanji": "かかく",
+        "roma": "KAKAKU"
+      },
+      {
+        "kanji": "かく",
+        "roma": "KAKU"
+      },
+      {
+        "kanji": "企画",
+        "roma": "KIKAKU"
+      },
+      {
+        "kanji": "かこく",
+        "roma": "KAKOKU"
+      }
+    ]
+  }
+}

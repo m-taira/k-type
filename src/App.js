@@ -10,6 +10,7 @@ const App = ({ store }) => (
   <Provider store={ store }>
     <Router>
       <div className="container">
+        <Route exact path="/" component={ Title }/>
         <Route exact path="/game" component={ Game }/>
         <Route exact path="/title" component={ Title }/>
         <Route exact path="/result" component={ Result }/>

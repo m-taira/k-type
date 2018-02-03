@@ -13,15 +13,16 @@ const Menu = (props) => {
   const listStyle = {
     listStyleType: 'none'
   }
+
   return (
-    <ul style={listStyle}>
+    <div className="menu-box" style={listStyle}>
       {
-        Object.keys(sentence).map((k) => {
-          return(<MenuItem course={k} menu={sentence[k]} actions={actions} selected={k === current_course}></MenuItem>)
+        Object.keys(sentence).map((k, index) => {
+          return(<MenuItem key={index} course={k} menu={sentence[k]} actions={actions} selected={k === current_course}></MenuItem>)
         })
 
       }
-    </ul>
+    </div>
   )
 }
 

@@ -14,6 +14,7 @@ import Menu from '../components/Menu'
 
 class Title extends Component {
   handleKeydown(e) {
+    e.preventDefault()
     const { actions } = this.props
     if (e.keyCode === 32) {
       actions.startCountdown()
@@ -40,25 +41,43 @@ class Title extends Component {
   }
 
   renderMenu() {
-
     const { actions, game, visible_menu } = this.props
-    if(visible_menu === true ) {
+    if (visible_menu === true) {
       return <Menu actions={actions} current_course={game.course}></Menu>
+    } else {
+      return (
+        <div className="rule-box">
+          <h3 className="rule-title">ルール</h3>
+          <ul className="rule-list">
+            <li className="rule-item">五十音をあ行からわ行まで、各行ごとに繰り返し練習します。</li>
+            <li className="rule-item">１単語（あいうえおなど）ごとに間違った回数をカウントします。</li>
+            <li className="rule-item">１度も間違えずにタイピングすると結果が○になります。</li>
+          </ul>
+        </div>
+      )
     }
+
+
   }
 
   render() {
     return (
       <Keysensor onKeyDown={this.handleKeydown.bind(this)} onKeyUp={this.handleKeyup.bind(this)}>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          タイピングタイトル
-        </p>
-        <p>スペースで開始</p>
-        { this.renderMenu() }
+        <div className="content">
+          <div className="main-area">
+            <div className="title">
+              <p className="title-char title-blue">た</p>
+              <p className="title-char title-green">い</p>
+              <p className="title-char title-orange">ぴ</p>
+              <p className="title-char title-red">ん</p>
+              <p className="title-char title-pink">ぐ</p>
+            </div>
+            <p className="start-caption">スペースで開始</p>
+          </div>
+          <div className="sub-area">
+            { this.renderMenu() }
+          </div>
+        </div>
       </Keysensor>
     );
   }

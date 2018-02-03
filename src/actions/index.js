@@ -80,3 +80,16 @@ export const hideMenu = () => {
     type: 'HIDE_MENU'
   }
 }
+
+export const pressedKey = (pressed_key) => {
+  return {
+    type: 'PRESS_KEY',
+    pressed_key
+  }
+}
+
+export const  goal = () => {
+  return {
+    type: 'GOAL'
+  }
+}

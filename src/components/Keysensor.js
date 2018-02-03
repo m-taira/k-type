@@ -16,7 +16,7 @@ class Keysensor extends Component {
   render() {
     const { onKeyDown, onKeyPress, onKeyUp, children } = this.props
     return (
-      <div className="App" onKeyPress={onKeyPress} onKeyDown={onKeyDown} onKeyUp={onKeyUp} tabIndex="0" style={this.focusStyle()} ref={(input) => {
+      <div onKeyPress={onKeyPress} onKeyDown={onKeyDown} onKeyUp={onKeyUp} tabIndex="0" style={this.focusStyle()} ref={(input) => {
         this.keyPressContainer = input
       }}>
         {children}

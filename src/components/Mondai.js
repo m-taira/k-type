@@ -32,15 +32,23 @@ class Mondai extends Component {
   }
 
   render() {
-    const { count, code, onKeyPress, onClick, entered, unentered, kanji } = this.props
+    const { onKeyPress, entered, unentered, kanji, onKeyDown, game } = this.props
     return (
-      <Keysensor onKeyPress={onKeyPress}>
+      <Keysensor onKeyPress={onKeyPress} onKeyDown={onKeyDown}>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo"/>
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p style={this.mondaiStyle()}>{kanji}</p>
-        <span style={this.enteredStyle()}>{entered}</span><span style={this.unenteredStyle()}>{unentered}</span>
+        <p style={this.mondaiStyle()}>{game.current_sentence.kanji}</p>
+        <span style={this.enteredStyle()}>{game.entered}</span><span style={this.unenteredStyle()}>{game.unentered}</span>
+        <p>{game.miss}</p>
+        <p>
+        {
+          game.result.map((r) => {
+            return <span>{r}</span>
+          })
+        }
+        </p>
       </Keysensor>
     )
   }

@@ -1,18 +1,20 @@
+import _ from 'lodash'
 const game = (state = {}, action) => {
-  console.log(state)
-  console.log(action)
   switch (action.type) {
+    case 'SET_MENU':
+      return Object.assign({}, state, { course: action.course } )
     case 'START_GAME':
-      return Object.assign({}, state, { entered: '', current_sentence: 0, unentered: state.sentences[0].roma})
+      return Object.assign({}, state, { entered: '', current_sentence: state.sentences[0], unentered: state.sentences[0].roma, miss: 0, result: []})
     case 'CORRECT':
       return Object.assign({}, state, { entered: `${state.entered}${action.char}`, unentered: state.unentered.slice(1) })
     case 'NEXT_SENTENCE':
-      console.log('next sentence')
-      console.log(state)
-      const next_sentence = (state.current_sentence === undefined) ? 0 : state.current_sentence + 1
-      return Object.assign({}, state, { current_sentence: next_sentence, entered: '', unentered: state.sentences[next_sentence].roma})
+      const next_sentence = _.sample(state.sentences)
+      const new_result = state.result.concat([state.miss])
+      return Object.assign({}, state, { current_sentence: next_sentence, entered: '', unentered: next_sentence.roma, miss: 0, result: new_result})
     case 'LOAD_SENTENCES':
       return Object.assign({}, state, { sentences: action.sentences })
+    case 'MISS':
+      return Object.assign({}, state, { miss: state.miss + 1})
 
     default:
       return state

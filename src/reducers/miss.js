@@ -1,6 +1,4 @@
 const miss = (state = {}, action) => {
-  console.log(state)
-  console.log(action)
   switch(action.type){
     case 'MISS':
       return state + 1

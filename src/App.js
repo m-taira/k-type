@@ -9,7 +9,7 @@ const App = ({ store }) => (
   <Provider store={ store }>
     <Router>
       <div>
-        <Route exact path="/" component={ game }/>
+        <Route exact path="/game" component={ game }/>
         <Route exact path="/title" component={ title }/>
       </div>
     </Router>

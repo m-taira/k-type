@@ -19,8 +19,34 @@ export const startCountdown = () => {
   }
 }
 
-export const timeComplete = () => {
+export const startGame = () => {
   return {
     type: 'START_GAME'
+  }
+}
+
+export const correctType = (char) => {
+  return {
+    type: 'CORRECT',
+    char
+  }
+}
+
+export const loadSentences = (sentences) => {
+  return {
+    type: 'LOAD_SENTENCES',
+    sentences
+  }
+}
+
+export const nextSentence = () => {
+  return {
+    type: 'NEXT_SENTENCE'
+  }
+}
+
+export const miss = () => {
+  return {
+    type: 'MISS'
   }
 }

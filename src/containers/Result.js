@@ -8,42 +8,38 @@ import * as Actions from '../actions'
 
 import { Link } from 'react-router-dom'
 
+import Keysensor from '../components/Keysensor'
+
 
 
 class Result extends Component {
 
-  handleAddButton() {
-    console.log('handle add button')
-    const { actions } = this.props
-    actions.addCount(1)
+
+  handleKeydown(e){
+    console.log('call handle key down')
+    const { history } = this.props
+    if(e.keyCode === 32) {
+      history.push('/title')
+    }
   }
 
-  handleKeyPress(e){
-    console.log('call handle key press')
-    const { actions } = this.props
-    actions.keyPress(e.charCode)
-  }
-
-  focusStyle(){
+  missStyle() {
     return {
-      outline: 1,
-      width: '100%'
+      fontSize: '3.5rem'
     }
   }
 
   render() {
-    const { code } = this.props
+    const { miss } = this.props
     return (
-      <div className="App" onKeyPress={this.handleKeyPress.bind(this)} tabIndex="0" style={this.focusStyle()} >
+      <Keysensor onKeyDown={this.handleKeydown.bind(this)}>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Link to='/title'>戻る</Link>
-      </div>
+        <p style={this.missStyle()}>{miss}回ミスしたよ</p>
+        <p>スペースでタイトルに戻る</p>
+      </Keysensor>
     );
   }
 }

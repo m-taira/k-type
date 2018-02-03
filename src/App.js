@@ -2,15 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import game from './containers/game'
-import title from './containers/title'
+import Game from './containers/Game'
+import Title from './containers/Title'
+import Result from './containers/Result'
 
 const App = ({ store }) => (
   <Provider store={ store }>
     <Router>
       <div>
-        <Route exact path="/game" component={ game }/>
-        <Route exact path="/title" component={ title }/>
+        <Route exact path="/game" component={ Game }/>
+        <Route exact path="/title" component={ Title }/>
+        <Route exact path="/result" component={ Result }/>
       </div>
     </Router>
   </Provider>

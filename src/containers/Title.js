@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 
 
 
-class title extends Component {
+class Title extends Component {
 
   handleAddButton() {
     console.log('handle add button')
@@ -58,4 +58,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(title);
+export default connect(mapStateToProps, mapDispatchToProps)(Title);

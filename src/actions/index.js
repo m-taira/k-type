@@ -12,3 +12,15 @@ export const keyPress = (code) => {
     code
   }
 }
+
+export const startCountdown = () => {
+  return {
+    type: 'START_COUNTDOWN'
+  }
+}
+
+export const timeComplete = () => {
+  return {
+    type: 'START_GAME'
+  }
+}

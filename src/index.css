@@ -12,10 +12,6 @@ body {
   height: 100%;
 }
 
-p {
-
-}
-
 .content {
   height: 100%
 }
@@ -42,28 +38,28 @@ p {
   filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6));
 }
 
-.title-green {
+.title1 {
   color: #0E5800;
   border-color: #0E5800;
 }
 
-.title-red {
+.title4 {
   color: #FF0000;
   border-color: #FF0000;
   transform: rotate(-15deg);
 }
 
-.title-blue {
+.title2 {
   color: #3a943d;
   border-color: #3a943d;
 }
 
-.title-orange {
+.title3 {
   color: #FF8900;
   border-color: #FF8900;
 }
 
-.title-pink {
+.title5 {
   color: #ffba3d;
   border-color: #ffba3d;
 }
@@ -76,16 +72,24 @@ p {
   padding: 30px;
 }
 
-.main-area {
-  height: 49%;
+.title-main-area {
+  height: 65%;
 }
 
-.sub-area {
+.title-sub-area {
   background-color: #FF8900;
-  height: 49%;
+  height: 35%;
   overflow: scroll;
+}
 
-  flex: 1;
+.game-main-area {
+  height: 50%;
+}
+
+.game-sub-area {
+  background-color: #FF8900;
+  height: 50%;
+  overflow: scroll;
 }
 
 .menu-box {
@@ -258,7 +262,7 @@ p {
   color: red;
   font-weight: bold;
   width: 400px;
-  margin: 100px auto;
+  margin: 1px auto;
   border: 20px solid red;
   text-align: center;
   padding: 30px 30px;
@@ -277,7 +281,8 @@ p {
 }
 
 .goal-box {
-  height: 100px;
+  width:100px;
+  height: 200px;
   flex-grow: 1;
 }
 
@@ -286,12 +291,65 @@ p {
   width: 100px;
 }
 
+.fukidasi-area {
+  display: flex;
+}
 
-/*
+.fukidasi-box {
+  height: 50px;
+  flex-grow: 130;
+}
 
-div, p {
-  border: 1px solid black;
+.fukidasi-goal {
+  height: 50px;
+  flex-grow: 1;
 }
 
 
-*/
+.balloon2 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #FFF;
+  border: solid 3px #555;
+  box-sizing: border-box;
+}
+
+.balloon2:before{
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 12px solid #FFF;
+  z-index: 2;
+}
+
+.balloon2:after{
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #555;
+  z-index: 1;
+}
+
+.balloon2 p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*div, p {
+  border: 1px solid black;
+}*/
+

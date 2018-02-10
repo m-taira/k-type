@@ -11,20 +11,7 @@
   },
   "2": {
     "title": "あ行（テスト）",
-    "sentences": [
-      {
-        "kanji": "あい",
-        "roma": "AI"
-      },
-      {
-        "kanji": "あう",
-        "roma": "AU"
-      },
-      {
-        "kanji": "いえ",
-        "roma": "IE"
-      }
-    ]
+    "sentences": [{"kanji":"あい","roma":"AI"},{"kanji":"うお","roma":"UO"},{"kanji":"あお","roma":"AO"},{"kanji":"おい","roma":"OI"},{"kanji":"あう","roma":"AU"},{"kanji":"いえ","roma":"IE"},{"kanji":"うえ","roma":"UE"},{"kanji":"うえ","roma":"UE"},{"kanji":"おう","roma":"OU"},{"kanji":"おおい","roma":"OOI"},{"kanji":"あおい","roma":"AOI"},{"kanji":"いあい","roma":"IAI"},{"kanji":"えいえい","roma":"EIEI"},{"kanji":"おいおい","roma":"OIOI"}]
   },
   "3": {
     "title": "か行",
@@ -38,39 +25,48 @@
   },
   "4": {
     "title": "か行（テスト）",
+    "sentences": [{"kanji":"かい","roma":"KAI"},{"kanji":"おく","roma":"OKU"},{"kanji":"きく","roma":"KIKU"},{"kanji":"けいこ","roma":"KEIKO"},{"kanji":"かお","roma":"KAO"},{"kanji":"かく","roma":"KAKU"},{"kanji":"きおく","roma":"KIOKU"},{"kanji":"きあい","roma":"KIAI"},{"kanji":"くき","roma":"KUKI"},{"kanji":"えき","roma":"EKI"},{"kanji":"えいこう","roma":"EIKOU"},{"kanji":"おけ","roma":"OKE"},{"kanji":"いけ","roma":"IKE"},{"kanji":"あいこ","roma":"AIKO"},{"kanji":"こい","roma":"KOI"},{"kanji":"いこい","roma":"IKOI"},{"kanji":"かいこう","roma":"KAIKOU"}]
+  },
+  "5": {
+    "title": "さ行",
     "sentences": [
       {
-        "kanji": "かき",
-        "roma": "KAKI"
-      },
-      {
-        "kanji": "キキ",
-        "roma": "KIKI"
-      },
-      {
-        "kanji": "かこ",
-        "roma": "KAKO"
-      },
-      {
-        "kanji": "きく",
-        "roma": "KIKU"
-      },
-      {
-        "kanji": "かかく",
-        "roma": "KAKAKU"
-      },
-      {
-        "kanji": "かく",
-        "roma": "KAKU"
-      },
-      {
-        "kanji": "企画",
-        "roma": "KIKAKU"
-      },
-      {
-        "kanji": "かこく",
-        "roma": "KAKOKU"
+        "kanji": "さしすせそ",
+        "kana": "",
+        "roma": "SASISUSESO"
       }
     ]
+  },
+  "6": {
+    "title": "さ行（テスト）",
+    "sentences": [{"kanji":"さいこう","roma":"SAIKOU"},{"kanji":"さかさ","roma":"SAKASA"},{"kanji":"あさ","roma":"ASA"},{"kanji":"えさ","roma":"ESA"},{"kanji":"しあい","roma":"SIAI"},{"kanji":"しか","roma":"SIKA"},{"kanji":"あかし","roma":"AKASI"},{"kanji":"すかい","roma":"SUKAI"},{"kanji":"いす","roma":"ISU"},{"kanji":"かす","roma":"KASU"},{"kanji":"さかす","roma":"SAKASU"},{"kanji":"せいこう","roma":"SEIKOU"},{"kanji":"あせ","roma":"ASE"},{"kanji":"せかいし","roma":"SEKAISI"},{"kanji":"せいかく","roma":"SEIKAKU"},{"kanji":"いせ","roma":"ISE"},{"kanji":"いくさ","roma":"IKUSA"},{"kanji":"そし","roma":"SOSI"},{"kanji":"あそ","roma":"ASO"},{"kanji":"そこ","roma":"SOKO"},{"kanji":"うそ","roma":"USO"},{"kanji":"おそい","roma":"OSOI"}]
+  },
+  "7": {
+    "title": "た行",
+    "sentences": [
+      {
+        "kanji": "たちつてと",
+        "kana": "",
+        "roma": "TATITUTETO"
+      }
+    ]
+  },
+  "8": {
+    "title": "た行（テスト）",
+    "sentences": [{"kanji":"たい","roma":"TAI"},{"kanji":"たたく","roma":"TATAKU"},{"kanji":"たかい","roma":"TAKAI"},{"kanji":"たいこ","roma":"TAIKO"},{"kanji":"たこ","roma":"TAKO"},{"kanji":"いた","roma":"ITA"},{"kanji":"うた","roma":"UTA"},{"kanji":"おたく","roma":"OTAKU"},{"kanji":"いち","roma":"ITI"},{"kanji":"ちかく","roma":"TIKAKU"},{"kanji":"うち","roma":"UTI"},{"kanji":"ちえ","roma":"TIE"},{"kanji":"おせち","roma":"OSETI"},{"kanji":"つえ","roma":"TUE"},{"kanji":"あつい","roma":"ATUI"},{"kanji":"つくえ","roma":"TUKUE"},{"kanji":"つたう","roma":"TUTAU"},{"kanji":"あかつち","roma":"AKATUTI"},{"kanji":"あて","roma":"ATE"},{"kanji":"ていき","roma":"TEIKI"},{"kanji":"てき","roma":"TEKI"},{"kanji":"おて","roma":"OTE"},{"kanji":"かてい","roma":"KATEI"},{"kanji":"とかい","roma":"TOKAI"},{"kanji":"あと","roma":"ATO"},{"kanji":"とけい","roma":"TOKEI"},{"kanji":"おと","roma":"OTO"},{"kanji":"いと","roma":"ITO"},{"kanji":"とさか","roma":"TOSAKA"},{"kanji":"えと","roma":"ETO"}]
+  },
+  "9": {
+    "title": "な行",
+    "sentences": [
+      {
+        "kanji": "なにぬねの",
+        "kana": "",
+        "roma": "NANINUNENO"
+      }
+    ]
+  },
+  "10": {
+    "title": "な行（テスト）",
+    "sentences": [{"kanji":"ないか","roma":"NAIKA"},{"kanji":"あな","roma":"ANA"},{"kanji":"ないと","roma":"NAITO"},{"kanji":"なおす","roma":"NAOSU"},{"kanji":"なに","roma":"NANI"},{"kanji":"なおす","roma":"NAOSU"},{"kanji":"かに","roma":"KANI"},{"kanji":"おに","roma":"ONI"},{"kanji":"あかおに","roma":"AKAONI"},{"kanji":"にく","roma":"NIKU"},{"kanji":"にこにこ","roma":"NIKONIKO"},{"kanji":"たぬき","roma":"TANUKI"},{"kanji":"いぬ","roma":"INU"},{"kanji":"きぬ","roma":"KINU"},{"kanji":"ぬの","roma":"NUNO"},{"kanji":"こぬ","roma":"KONU"},{"kanji":"ねこ","roma":"NEKO"},{"kanji":"おね","roma":"ONE"},{"kanji":"あね","roma":"ANE"},{"kanji":"おかね","roma":"OKANE"},{"kanji":"たね","roma":"TANE"},{"kanji":"こねこ","roma":"KONEKO"},{"kanji":"こいぬ","roma":"KOINU"},{"kanji":"きね","roma":"KINE"},{"kanji":"あの","roma":"ANO"},{"kanji":"その","roma":"SONO"},{"kanji":"のそのそ","roma":"NOSONOSO"},{"kanji":"すのう","roma":"SUNOU"},{"kanji":"すのこ","roma":"SUNOKO"}]
   }
 }

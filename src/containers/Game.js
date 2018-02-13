@@ -97,7 +97,7 @@ class game extends Component {
     return (
       <Countdown
         zeroPadLength={1}
-        date={Date.now() + 1000}
+        date={Date.now() + 3000}
         renderer={this.renderer.bind(this)}
         onComplete={this.handleTimeComplete.bind(this)}
       />

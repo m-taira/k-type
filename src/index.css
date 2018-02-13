@@ -258,11 +258,13 @@ body {
 }
 
 .goal {
+  position: relative;
+  top: 25%;
+  left: calc(50% - 200px);
   font-size: 6rem;
   color: red;
   font-weight: bold;
   width: 400px;
-  margin: 1px auto;
   border: 20px solid red;
   text-align: center;
   padding: 30px 30px;

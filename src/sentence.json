@@ -68,5 +68,75 @@
   "10": {
     "title": "な行（テスト）",
     "sentences": [{"kanji":"ないか","roma":"NAIKA"},{"kanji":"あな","roma":"ANA"},{"kanji":"ないと","roma":"NAITO"},{"kanji":"なおす","roma":"NAOSU"},{"kanji":"なに","roma":"NANI"},{"kanji":"なおす","roma":"NAOSU"},{"kanji":"かに","roma":"KANI"},{"kanji":"おに","roma":"ONI"},{"kanji":"あかおに","roma":"AKAONI"},{"kanji":"にく","roma":"NIKU"},{"kanji":"にこにこ","roma":"NIKONIKO"},{"kanji":"たぬき","roma":"TANUKI"},{"kanji":"いぬ","roma":"INU"},{"kanji":"きぬ","roma":"KINU"},{"kanji":"ぬの","roma":"NUNO"},{"kanji":"こぬ","roma":"KONU"},{"kanji":"ねこ","roma":"NEKO"},{"kanji":"おね","roma":"ONE"},{"kanji":"あね","roma":"ANE"},{"kanji":"おかね","roma":"OKANE"},{"kanji":"たね","roma":"TANE"},{"kanji":"こねこ","roma":"KONEKO"},{"kanji":"こいぬ","roma":"KOINU"},{"kanji":"きね","roma":"KINE"},{"kanji":"あの","roma":"ANO"},{"kanji":"その","roma":"SONO"},{"kanji":"のそのそ","roma":"NOSONOSO"},{"kanji":"すのう","roma":"SUNOU"},{"kanji":"すのこ","roma":"SUNOKO"}]
+  },
+  "11": {
+    "title": "は行",
+    "sentences": [
+      {
+        "kanji": "はひふへほ",
+        "kana": "",
+        "roma": "HAHIHUHEHO"
+      }
+    ]
+  },
+  "12": {
+    "title": "は行（テスト）",
+    "sentences": [{"kanji":"あかいはな","roma":"AKAIHANA"},{"kanji":"ちちのひ","roma":"TITINOHI"},{"kanji":"あおいふね","roma":"AOIHUNE"},{"kanji":"おへそ","roma":"OHESO"},{"kanji":"はさみ","roma":"HASAMI"},{"kanji":"ひこうき","roma":"HIKOUKI"},{"kanji":"とうふ","roma":"TOUHU"},{"kanji":"ふきのとう","roma":"HUKINOTOU"},{"kanji":"ほうせき","roma":"HOUSEKI"},{"kanji":"ほうたい","roma":"HOUTAI"},{"kanji":"へとへと","roma":"HETOHETO"},{"kanji":"へいせい","roma":"HEISEI"},{"kanji":"ははのひ","roma":"HAHANOHI"},{"kanji":"ひすい","roma":"HISUI"},{"kanji":"はいたつ","roma":"HAITATU"},{"kanji":"はくさい","roma":"HAKUSAI"},{"kanji":"ふうとう","roma":"HUUTOU"}]
+  },
+  "13": {
+    "title": "ま行",
+    "sentences": [
+      {
+        "kanji": "まみむめも",
+        "kana": "",
+        "roma": "MAMIMUMEMO"
+      }
+    ]
+  },
+  "14": {
+    "title": "ま行（テスト）",
+    "sentences":[{"kanji":"まいく","roma":"MAIKU"},{"kanji":"かまいたち","roma":"KAMAITATI"},{"kanji":"たくましい","roma":"TAKUMASII"},{"kanji":"みみかき","roma":"MIMIKAKI"},{"kanji":"あみこみ","roma":"AMIKOMI"},{"kanji":"うみねこ","roma":"UMINEKO"},{"kanji":"むかしむかし","roma":"MUKASIMUKASI"},{"kanji":"たまむし","roma":"TAMAMUSI"},{"kanji":"いむしつ","roma":"IMUSITU"},{"kanji":"かめむし","roma":"KAMEMUSI"},{"kanji":"めきしこ","roma":"MEKISIKO"},{"kanji":"とうめい","roma":"TOUMEI"},{"kanji":"あおうめ","roma":"AOUME"},{"kanji":"もくもく","roma":"MOKUMOKU"},{"kanji":"さつまいも","roma":"SATUMAIMO"},{"kanji":"ものまね","roma":"MONOMANE"},{"kanji":"ももにく","roma":"MOMONIKU"},{"kanji":"はつねみく","roma":"HATUNEMIKU"}]
+  },
+  "15": {
+    "title": "や行",
+    "sentences": [
+      {
+        "kanji": "やゆよ",
+        "kana": "",
+        "roma": "YAYUYO"
+      }
+    ]
+  },
+  "16": {
+    "title": "や行（テスト）",
+    "sentences":[{"kanji":"やきいも","roma":"YAKIIMO"},{"kanji":"やくそく","roma":"YAKUSOKU"},{"kanji":"すなのやま","roma":"SUNANOYAMA"},{"kanji":"やきにく","roma":"YAKINIKU"},{"kanji":"あかいやね","roma":"AKAIYANE"},{"kanji":"ゆきやま","roma":"YUKIYAMA"},{"kanji":"こわいゆめ","roma":"KOWAIYUME"},{"kanji":"ゆかいななかま","roma":"YUKAINANAKAMA"},{"kanji":"ゆうめいなひと","roma":"YUUMEINAHITO"},{"kanji":"よのなか","roma":"YONONAKA"},{"kanji":"よこはま","roma":"YOKOHAMA"},{"kanji":"おうよう","roma":"OUYOU"},{"kanji":"いかいよう","roma":"IKAIYOU"},{"kanji":"ようかい","roma":"YOUKAI"},{"kanji":"ひやしあめ","roma":"HIYASIAME"}]
+  },
+  "17": {
+    "title": "ら行",
+    "sentences": [
+      {
+        "kanji": "らりるれろ",
+        "kana": "",
+        "roma": "RARIRURERO"
+      }
+    ]
+  },
+  "18": {
+    "title": "ら行（テスト）",
+    "sentences":[{"kanji":"たからもの","roma":"TAKARAMONO"},{"kanji":"らいと","roma":"RAITO"},{"kanji":"あらいもの","roma":"ARAIMONO"},{"kanji":"こあら","roma":"KOARA"},{"kanji":"らくさつ","roma":"RAKUSATU"},{"kanji":"くりすます","roma":"KURISUMASU"},{"kanji":"ありすとてれす","roma":"ARISUTOTERESU"},{"kanji":"りとますし","roma":"RITOMASUSI"},{"kanji":"るねさんす","roma":"RUNESANNSU"},{"kanji":"あひる","roma":"AHIRU"},{"kanji":"とりかえる","roma":"TORIKAERU"},{"kanji":"ふりかえる","roma":"HURIKAERU"},{"kanji":"いれもの","roma":"IREMONO"},{"kanji":"れいとうこ","roma":"REITOUKO"},{"kanji":"はれのひ","roma":"HARENOHI"},{"kanji":"へれにく","roma":"HERENIKU"},{"kanji":"かくれみの","roma":"KAKUREMINO"},{"kanji":"あろは","roma":"AROHA"},{"kanji":"ろいやるほすと","roma":"ROIYARUHOSUTO"},{"kanji":"いろはうた","roma":"IROHAUTA"},{"kanji":"おおとろ","roma":"OOTORO"},{"kanji":"さいころ","roma":"SAIKORO"}]
+  },
+  "19": {
+    "title": "わ行",
+    "sentences": [
+      {
+        "kanji": "わをん",
+        "kana": "",
+        "roma": "WAWONN"
+      }
+    ]
+  },
+  "20": {
+    "title": "わ行（テスト）",
+    "sentences": [{"kanji":"わしんとん","roma":"WASINNTONN"},{"kanji":"わんわん","roma":"WANNWANN"},{"kanji":"わんたんめん","roma":"WANNTANNMENN"},{"kanji":"くわのみ","roma":"KUWANOMI"},{"kanji":"ほんをよむ","roma":"HONNWOYOMU"},{"kanji":"かおをあらう","roma":"KAOWOARAU"},{"kanji":"ふくをきる","roma":"HUKUWOKIRU"},{"kanji":"かみをきる","roma":"KAMIWOKIRU"},{"kanji":"てをたたく","roma":"TEWOTATAKU"},{"kanji":"かんたん","roma":"KANNTANN"},{"kanji":"みかんのかわをむく","roma":"MIKANNNOKAWAWOMUKU"},{"kanji":"たんけんをする","roma":"TANNKENNWOSURU"}]
   }
 }
